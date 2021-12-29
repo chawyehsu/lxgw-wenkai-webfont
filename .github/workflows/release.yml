@@ -1,0 +1,42 @@
+name: Release
+
+on:
+  push:
+    branches: main
+    paths:
+      - 'packages/**/VERSION'
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 2
+    - name: Setup Node.js
+      uses: actions/setup-node@v2
+    - name: Setup Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+        cache: pip
+    - name: Get changed files
+      id: changed_files
+      uses: tj-actions/changed-files@v2.0.0
+    - name: Install Python Deps
+      run: pip install -r requirements.txt
+    - name: Build Package lxgw-wenkai-lite-webfont
+      if: contains(steps.changed_files.outputs.modified_files, 'packages/lxgw-wenkai-lite-webfont/VERSION')
+      run: npm run build:package -- lxgw-wenkai-lite-webfont
+    - name: Build Package lxgw-wenkai-tc-webfont
+      if: contains(steps.changed_files.outputs.modified_files, 'packages/lxgw-wenkai-tc-webfont/VERSION')
+      run: npm run build:package -- lxgw-wenkai-tc-webfont
+    - name: Build Package lxgw-wenkai-webfont
+      if: contains(steps.changed_files.outputs.modified_files, 'packages/lxgw-wenkai-webfont/VERSION')
+      run: npm run build:package -- lxgw-wenkai-webfont
+    - name: Run Semantic Release
+      run: npm run release
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

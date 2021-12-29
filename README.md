@@ -17,7 +17,7 @@ Put the jsDelivr `<link>` into your html head, then set your font-family to use 
 ```html
 <html>
 <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@0/style.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont/style.min.css" />
   <style>
     body {
       font-family: "LXGW WenKai", sans-serif;
@@ -50,7 +50,7 @@ body {
 ## License
 
 **lxgw-wenkai-webfont** © [Chawye Hsu](https://github.com/chawyehsu). Released under the [MIT](LICENSE) License.  
-The LXGW WenKai typeface is available under the [SIL Open Font License 1.1](OFL.txt) license.
+The LXGW WenKai typeface is available under the [SIL Open Font License 1.1][ofl] license.
 
 > [Blog](https://chawyehsu.com) · GitHub [@chawyehsu](https://github.com/chawyehsu) · Twitter [@chawyehsu](https://twitter.com/chawyehsu)
 
@@ -65,3 +65,4 @@ The LXGW WenKai typeface is available under the [SIL Open Font License 1.1](OFL.
 [lxgw-wenkai]: https://github.com/lxgw/LxgwWenKai
 [jsdelivr-badge]: https://data.jsdelivr.com/v1/package/npm/lxgw-wenkai-webfont/badge
 [jsdelivr-url]: https://www.jsdelivr.com/package/npm/lxgw-wenkai-webfont
+[ofl]: https://scripts.sil.org/OFL
