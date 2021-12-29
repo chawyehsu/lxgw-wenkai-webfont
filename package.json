@@ -1,0 +1,13 @@
+{
+  "version": "0.1.0",
+  "name": "lxgw-wenkai-webfont-demo",
+  "description": "demo site for lxgw-wenkai-webfont",
+  "license": "MIT",
+  "private": true,
+  "author": "Chawye Hsu <chawyehsu@hotmail.com>",
+  "homepage": "https://github.com/chawyehsu/lxgw-wenkai-webfont",
+  "main": "index.html",
+  "files": [
+    "index.html"
+  ]
+}
