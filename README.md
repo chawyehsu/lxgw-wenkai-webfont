@@ -17,7 +17,7 @@ Put the jsDelivr `<link>` into your html head, then set your font-family to use 
 ```html
 <html>
 <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont/style.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.0.0/style.css" />
   <style>
     body {
       font-family: "LXGW WenKai", sans-serif;
