@@ -1,0 +1,15 @@
+{
+  "version": "0.0.0",
+  "name": "lxgw-wenkai-webfont-monorepo",
+  "description": "monorepo for lxgw-wenkai-webfont",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "python -m update",
+    "build:package": "python -m update --package",
+    "deploy": "npx -y gh-pages -d examples",
+    "release": "npx -y -p @qiwi/semrel-toolkit multi-semrel"
+  }
+}
