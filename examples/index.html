@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>霞鹜文楷在线示例 LXGW WenKai typeface demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1/modern-normalize.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont/style.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont/style.min.css" />
+    <style>
+      html{font-size:100%;text-size-adjust:100%;line-height:1.7;}
+      body{font-family:'LXGW WenKai',serif;margin:0 auto;padding:1.5rem;padding-bottom:3rem;max-width:960px;}
+      h1,h2,h3,h4,h5,h6,p{margin:0;margin-bottom:1rem;}
+      h1{font-size:2rem;}
+      h2{font-size:1.5rem;}
+      .tctitle{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;}
+      .tctitle h2{margin:0;}
+      .tctitle button{cursor:pointer;}
+      .tc.enabled h2:lang(zh-hk),.tc.enabled p:lang(zh-hk){font-family:'LXGW WenKai TC',serif;}
+      .title{margin-top:1rem;font-size:2.5rem;font-weight:700;}
+      .center{text-align:center;}
+      textarea,input{font-family:inherit;}
+      textarea{resize:none;}
+      .badges{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;}
+      .badges img{display:block;}
+      .badge{margin-left:0.5rem;}
+      .meta{font-size:0.8rem;}
+      pre,code{margin:0;font-family:'LXGW WenKai Mono',monospace;}
+      pre{overflow:auto;margin-bottom:1rem;padding:1rem;border:1px solid #999;}
+      .token.cdata,.token.comment,.token.prolog{color:#a0a1a7}
+      .language-css .token.string,.style .token.string,.token.entity{background:#f0f0f1;color:#696c77}
+      .token.punctuation{color:#383a42}
+      .token.deleted,.token.operator,.token.tag,.token.variable{color:#ca1243}
+      .token.boolean,.token.constant,.token.number,.token.property,.token.url{color:#d75f00}
+      .token.bold,.token.class-name{color:#c18401}
+      .token.atrule,.token.attr-value,.token.inserted,.token.string,.token.symbol{color:#50a14f}
+      .token.important,.token.regex{color:#0184bc}
+      .token.attr-name,.token.function{color:#4078f2}
+      .token.builtin,.token.char,.token.italic,.token.keyword,.token.selector{color:#a626a4}
+      .token.doctype{color:#986801}
+      .token.bold,.token.important{font-weight:700}
+      .token.italic{font-style:italic}
+      .token.entity{cursor:help}
+      .namespace{opacity:.7}
+      p{margin:0;margin-bottom:1rem;}
+      .user-input{width:100%;font-size:1.2rem;outline:none;border:1px solid #999;}
+    </style>
+  </head>
+  <body>
+    <a href="https://github.com/chawyehsu/lxgw-wenkai-webfont" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <main>
+      <h1 class="title center">霞鹜文楷 LXGW WenKai</h1>
+      <p class="center">An open-source Chinese font derived from Fontworks' Klee One. 一款基于 FONTWORKS 的 Klee One 的开源中文字体。</p>
+      <p class="badges center">
+        webfont:
+        <a class="badge" href="https://github.com/chawyehsu/lxgw-wenkai-webfont">
+          <img alt="lxgw-wenkai-release" src="https://img.shields.io/npm/v/lxgw-wenkai-webfont.svg">
+        </a>
+        　font license:
+        <a class="badge" href="https://github.com/lxgw/LxgwWenKai" aria-label="lxgw-wenkai">
+          <img alt="lxgw-wenkai-license" src="https://img.shields.io/github/license/lxgw/LxgwWenKai">
+        </a>
+      </p>
+      <h1>测试文本</h1>
+      <h2>简体中文</h2>
+      <h2 class="center">岳阳楼记</h2>
+      <p class="center meta">范仲淹</p>
+      <p>庆历四年春，滕子京谪守巴陵郡。越明年，政通人和，百废具兴，乃重修岳阳楼，增其旧制，刻唐贤今人诗赋于其上；属予作文以记之。</p>
+      <p>予观夫巴陵胜状，在洞庭一湖。衔远山，吞长江，浩浩汤汤，横无际涯；朝晖夕阴，气象万千；此则岳阳楼之大观也，前人之述备矣。然则北通巫峡，南极潇湘，迁客骚人，多会于此，览物之情，得无异乎？</p>
+      <p>若夫霪雨霏霏，连月不开；阴风怒号，浊浪排空；日星隐曜，山岳潜形；商旅不行，樯倾楫摧；薄暮冥冥，虎啸猿啼。登斯楼也，则有去国怀乡，忧谗畏讥，满目萧然，感极而悲者矣。</p>
+      <p>至若春和景明，波澜不惊，上下天光，一碧万顷；沙鸥翔集，锦鳞游泳，岸芷汀兰，郁郁青青。而或长烟一空，皓月千里，浮光跃金，静影沉璧，渔歌互答，此乐何极。登斯楼也，则有心旷神怡，宠辱皆忘，把酒临风，其喜洋洋者矣。</p>
+      <p>嗟夫！予尝求古仁人之心，或异二者之为，何哉？不以物喜，不以己悲。居庙堂之高，则忧其民；处江湖之远，则忧其君。是进亦忧，退亦忧；然则何时而乐耶？其必曰：“先天下之忧而忧，后天下之乐而乐”欤！噫！微斯人，吾谁与归？</p>
+      <p>时六年九月十五日。</p>
+      <div id="tc" class="tc">
+        <div class="tctitle"><h2>繁体中文</h2><button id="btn">啟用舊字形</button></div>
+        <h2 lang="zh-hk" class="center">桃花源記</h2>
+        <p lang="zh-hk" class="center meta">陶淵明</p>
+        <p lang="zh-hk">晉太元中，武陵人捕魚爲業。緣溪行，忘路之遠近。忽逢桃花林，夾岸數百步，中無雜樹，芳草鮮美，落英繽紛。漁人甚異之。復前行，欲窮其林。林盡水源，便得一山，山有小口，髣髴若有光。便捨船，從口入。初極狹，纔通人。復行數十步，豁然開朗。土地平曠，屋舍儼然。有良田美池桑竹之屬。阡陌交通，鷄犬相聞。其中往來種作，男女衣著，悉如外人。黃髮垂髫，並怡然自樂。見漁人，乃大驚，問所從來。具答之。便要還家，設酒殺鷄作食。村中聞有此人，咸來問訊。自云先世避秦時亂，率妻子邑人來此絶境，不復出焉，遂與外人間隔。問今是何世，乃不知有漢，無論魏晉。此人一一爲具言所聞，皆歎惋。餘人各復延至其家，皆出酒食。停數日，辭去。此中人語云：「不足爲外人道也。」既出，得其船，便扶向路，處處誌之。及郡下，詣太守，説如此。太守即遣人隨其往，尋向所誌，遂迷，不復得路。南陽劉子驥，高尚士也，聞之，欣然規往。未果，尋病終。後遂無問津者。</p>
+        <p lang="zh-hk" class="center">嬴氏亂天紀，賢者避其世。黃綺之商山，伊人亦云逝。</p>
+        <p lang="zh-hk" class="center">往迹浸復湮，來逕遂蕪廢。相命肆農耕，日入從所憩。</p>
+        <p lang="zh-hk" class="center">桑竹垂餘蔭，菽稷隨時藝。春蠶收長絲，秋熟靡王稅。</p>
+        <p lang="zh-hk" class="center">荒路曖交通，鷄犬互鳴吠。俎豆猶古法，衣裳無新製。</p>
+        <p lang="zh-hk" class="center">童孺縱行歌，斑白歡遊詣。草榮識節和，木衰知風厲。</p>
+        <p lang="zh-hk" class="center">雖無紀歷誌，四時自成歲。怡然有餘樂，于何勞智慧。</p>
+        <p lang="zh-hk" class="center">奇蹤隱五百，一朝敞神界。淳薄既異源，旋復還幽蔽。</p>
+        <p lang="zh-hk" class="center">借問游方士，焉測塵囂外。願言躡輕風，高舉尋吾契。</p>
+      </div>
+      <h2>Lorem Ipsum</h2>
+      <p>The quick brown fox jumps over the lazy dog.</p>
+      <p>雷神の　少し響みて　さし曇り　雨もふらぬか　君を留めむ</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rutrum quisque non tellus orci ac. Quam viverra orci sagittis eu volutpat odio facilisis. Amet consectetur adipiscing elit ut aliquam. Nunc sed id semper risus in hendrerit gravida rutrum quisque. At tempor commodo ullamcorper a lacus vestibulum. Orci dapibus ultrices in iaculis nunc sed augue. Lobortis feugiat vivamus at augue eget arcu dictum varius. Ipsum faucibus vitae aliquet nec ullamcorper sit amet risus. Amet aliquam id diam maecenas ultricies mi eget. Aliquam eleifend mi in nulla posuere sollicitudin aliquam.</p>
+      <h2>Mono Font</h2>
+      <div class="highlight"><pre class="highlight-code"><code><span class="token comment">/* LXGW WenKai */</span>
+<span class="token atrule"><span class="token rule">@font-face</span></span> <span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'LXGW WenKai'</span><span class="token punctuation">;</span>
+    <span class="token property">font-style</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> 300<span class="token punctuation">;</span>
+    <span class="token property">font-display</span><span class="token punctuation">:</span> swap<span class="token punctuation">;</span>
+    <span class="token property">src</span><span class="token punctuation">:</span>
+        <span class="token function">local</span><span class="token punctuation">(</span><span class="token string">'LXGW WenKai Light'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">'./fonts/LXGWWenKai-Light.woff2'</span><span class="token punctuation">)</span></span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'woff2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token atrule"><span class="token rule">@font-face</span></span> <span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'LXGW WenKai'</span><span class="token punctuation">;</span>
+    <span class="token property">font-style</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> 400<span class="token punctuation">;</span>
+    <span class="token property">font-display</span><span class="token punctuation">:</span> swap<span class="token punctuation">;</span>
+    <span class="token property">src</span><span class="token punctuation">:</span>
+        <span class="token function">local</span><span class="token punctuation">(</span><span class="token string">'LXGW WenKai'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">'./fonts/LXGWWenKai-Regular.woff2'</span><span class="token punctuation">)</span></span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'woff2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token atrule"><span class="token rule">@font-face</span></span> <span class="token punctuation">{</span>
+    <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'LXGW WenKai'</span><span class="token punctuation">;</span>
+    <span class="token property">font-style</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
+    <span class="token property">font-weight</span><span class="token punctuation">:</span> 700<span class="token punctuation">;</span>
+    <span class="token property">font-display</span><span class="token punctuation">:</span> swap<span class="token punctuation">;</span>
+    <span class="token property">src</span><span class="token punctuation">:</span>
+        <span class="token function">local</span><span class="token punctuation">(</span><span class="token string">'LXGW WenKai Bold'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">'./fonts/LXGWWenKai-Bold.woff2'</span><span class="token punctuation">)</span></span> <span class="token function">format</span><span class="token punctuation">(</span><span class="token string">'woff2'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
+      <h2>下方文本框输入你想测试的文本</h2>
+      <textarea class="user-input" name="user-input" rows="10" placeholder="落霞与孤鹜齐飞，秋水共长天一色。"></textarea>
+    </main>
+    <script>
+      var btn = document.getElementById('btn')
+      function toggle() {
+        var tc = document.getElementById('tc')
+        if (tc.classList.contains('enabled')) {
+          tc.classList.remove('enabled')
+          btn.innerText = '啟用舊字形'
+        } else {
+          tc.classList.add('enabled')
+          btn.innerText = '停用舊字形'
+        }
+      }
+      btn.addEventListener('click', toggle)
+    </script>
+  </body>
+</html>
