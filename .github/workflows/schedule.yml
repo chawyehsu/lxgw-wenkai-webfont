@@ -1,4 +1,4 @@
-name: Upstream Minitor
+name: Upstream Monitor
 on:
   schedule:
   - cron: '0 8 * * 1'
@@ -23,8 +23,8 @@ jobs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v3
       with:
-        commit-message: 'feat(deps): update font versions'
+        commit-message: 'chore(deps): update font version'
         author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-        title: 'feat(deps): update font versions'
+        title: 'chore(deps): update font version'
         delete-branch: true
         branch-suffix: short-commit-hash
