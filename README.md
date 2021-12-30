@@ -10,17 +10,63 @@ For more information about the typeface, see [LXGW WenKai's website][lxgw-wenkai
 
 ## Usage
 
-#### Use jsDelivr
+#### Use NPM
 
-Put the jsDelivr `<link>` into your html head, then set your font-family to use `LXGW WenKai`. For example:
+First, install the package via npm or yarn.
+
+```sh
+npm install --save lxgw-wenkai-webfont
+# or Lite version
+npm install --save lxgw-wenkai-lite-webfont
+# or TC version
+npm install --save lxgw-wenkai-tc-webfont
+```
+
+Then import `style.css` to your main css style file and update the font-family.
+
+```css
+@import '~lxgw-wenkai-webfont/style.css';
+/* Lite version */
+@import '~lxgw-wenkai-lite-webfont/style.css';
+/* TC version */
+@import '~lxgw-wenkai-tc-webfont/style.css';
+body {
+  font-family: "LXGW WenKai", sans-serif;
+  /* Lite version */
+  font-family: "LXGW WenKai Lite", sans-serif;
+  /* TC version */
+  font-family: "LXGW WenKai TC", sans-serif;
+}
+
+/* Mono font (optional) */
+pre,code {
+  font-family: "LXGW WenKai Mono", sans-serif;
+  /* Lite version */
+  font-family: "LXGW WenKai Mono Lite", sans-serif;
+  /* TC version */
+  font-family: "LXGW WenKai Mono TC", sans-serif;
+}
+```
+
+#### Use CDN
+
+Put the jsDelivr `<link>` into your html head, then update the font-family.
 
 ```html
 <html>
 <head>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.0.0/style.css" />
+  <!-- Lite version -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.0.0/style.css" />
+  <!-- TC version -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css" />
   <style>
     body {
       font-family: "LXGW WenKai", sans-serif;
+      /* Lite version */
+      font-family: "LXGW WenKai Lite", sans-serif;
+      /* TC version */
+      font-family: "LXGW WenKai TC", sans-serif;
     }
   </style>
 </head>
@@ -30,22 +76,21 @@ Put the jsDelivr `<link>` into your html head, then set your font-family to use 
 </html>
 ```
 
-#### Use NPM
+#### Use specific font weights
 
-First, install the package via npm or yarn.
-
-```sh
-npm install --save lxgw-wenkai-webfont
-```
-
-Then import the css to your main css style file and set your font-family to use `LXGW WenKai`.
+You can also include specific weights if you don't want to use all the font
+weights or don't want to use mono font. For example:
 
 ```css
-@import '~lxgw-wenkai-webfont/style.css';
+@import '~lxgw-wenkai-webfont/lxgwwenkai-regular.css';
+@import '~lxgw-wenkai-webfont/lxgwwenkai-bold.css';
 body {
   font-family: "LXGW WenKai", sans-serif;
 }
 ```
+
+Lite version and TC version also support the same way. To know what css modules
+are available, please check out the npm package.
 
 ## License
 
