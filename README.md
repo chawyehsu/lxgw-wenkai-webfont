@@ -5,7 +5,6 @@ lxgw-wenkai-webfont
 
 [![demo][demo-badge]][demo-url] [![npm][npm-badge]][npm-url] [![npm][license-badge]](LICENSE) [![npm][npm-dl-badge]][npm-url] [![jsdelivr][jsdelivr-badge]][jsdelivr-url]
 
-
 For more information about the typeface, see [LXGW WenKai's website][lxgw-wenkai].
 
 ## Usage
@@ -20,6 +19,8 @@ npm install --save lxgw-wenkai-webfont
 npm install --save lxgw-wenkai-lite-webfont
 # or TC version
 npm install --save lxgw-wenkai-tc-webfont
+# or Screen version
+npm install --save lxgw-wenkai-screen-webfont
 ```
 
 Then import `style.css` to your main css style file and update the font-family.
@@ -30,12 +31,16 @@ Then import `style.css` to your main css style file and update the font-family.
 @import '~lxgw-wenkai-lite-webfont/style.css';
 /* TC version */
 @import '~lxgw-wenkai-tc-webfont/style.css';
+/* Screen version */
+@import '~lxgw-wenkai-screen-webfont/style.css';
 body {
   font-family: "LXGW WenKai", sans-serif;
   /* Lite version */
   font-family: "LXGW WenKai Lite", sans-serif;
   /* TC version */
   font-family: "LXGW WenKai TC", sans-serif;
+  /* Screen version */
+  font-family: "LXGW WenKai Screen", sans-serif;
 }
 
 /* Mono font (optional) */
@@ -55,11 +60,13 @@ Put the jsDelivr `<link>` into your html head, then update the font-family.
 ```html
 <html>
 <head>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.0.0/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css" />
   <!-- Lite version -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.0.0/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css" />
   <!-- TC version -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-tc-webfont@1.0.0/style.css" />
+  <!-- Screen version -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css" />
   <style>
     body {
       font-family: "LXGW WenKai", sans-serif;
@@ -67,6 +74,8 @@ Put the jsDelivr `<link>` into your html head, then update the font-family.
       font-family: "LXGW WenKai Lite", sans-serif;
       /* TC version */
       font-family: "LXGW WenKai TC", sans-serif;
+      /* Screen version */
+      font-family: "LXGW WenKai Screen", sans-serif;
     }
   </style>
 </head>
