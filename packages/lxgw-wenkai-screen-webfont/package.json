@@ -1,0 +1,33 @@
+{
+  "name": "lxgw-wenkai-screen-webfont",
+  "version": "0.0.0",
+  "description": "webfont package for the LXGW WenKai Screen typeface",
+  "license": "MIT",
+  "author": "Chawye Hsu <chawyehsu@hotmail.com>",
+  "homepage": "https://github.com/chawyehsu/lxgw-wenkai-webfont",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chawyehsu/lxgw-wenkai-webfont.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chawyehsu/lxgw-wenkai-webfont/issues"
+  },
+  "main": "style.css",
+  "style": "style.css",
+  "files": [
+    "CHANGELOG.md",
+    "files",
+    "*.css",
+    "OFL.txt",
+    "VERSION"
+  ],
+  "keywords": [
+    "cjk",
+    "lxgw-wenkai",
+    "kaiti",
+    "font",
+    "typeface",
+    "webfont",
+    "css"
+  ]
+}

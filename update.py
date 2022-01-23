@@ -13,7 +13,8 @@ PACKAGES_DIR = os.path.join(ROOT_DIR, "packages")
 PACKAGES = [
     "lxgw-wenkai-webfont",
     "lxgw-wenkai-tc-webfont",
-    "lxgw-wenkai-lite-webfont"
+    "lxgw-wenkai-lite-webfont",
+    "lxgw-wenkai-screen-webfont",
 ]
 f = open('unicode.json', 'r')
 UNICODE_RANGES = json.load(f)
@@ -29,6 +30,8 @@ def get_latest_release(repo):
         repo = "LXGWWenKaiTC"
     if repo == "lxgw-wenkai-lite-webfont":
         repo = "LXGWWenKai-Lite"
+    if repo == "lxgw-wenkai-screen-webfont":
+        repo = "LXGWWenKai-Screen"
     if CACHE_JSONS.get(repo):
         return CACHE_JSONS[repo]
     r = requests.get("https://api.github.com/repos/lxgw/{}/releases/latest"
@@ -100,6 +103,11 @@ def build_npm_package(package):
             font_family = "LXGW WenKai Lite"
         if "monolite" in font:
             font_family = "LXGW WenKai Mono Lite"
+        # lxgw-wenkai-screen
+        if "screen" in font:
+            font_family = "LXGW WenKai Screen"
+        if "screenr" in font:
+            font_family = "LXGW WenKai Screen R"
 
         css = ""
         for part,unicode in UNICODE_RANGES.items():
