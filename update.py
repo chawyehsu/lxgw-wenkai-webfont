@@ -48,9 +48,13 @@ def package_source_dir(package):
     return os.path.join(package_dir(package), "source")
 
 def diff_version(package):
-    f = open(os.path.join(package_dir(package), "VERSION"), 'r')
-    current_version = f.read().strip()
-    f.close()
+    version_file = os.path.join(package_dir(package), "VERSION")
+    if not os.path.exists(version_file):
+        current_version = "0"
+    else:
+        f = open(version_file, 'r')
+        current_version = f.read().strip()
+        f.close()
     latest_release = get_latest_release(package)
     latest_version = latest_release["tag_name"]
     should_update = True if current_version != latest_version else False
