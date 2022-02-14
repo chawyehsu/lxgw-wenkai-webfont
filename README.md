@@ -26,13 +26,13 @@ npm install --save lxgw-wenkai-screen-webfont
 Then import `style.css` to your main css style file and update the font-family.
 
 ```css
-@import '~lxgw-wenkai-webfont/style.css';
+@import 'lxgw-wenkai-webfont/style.css';
 /* Lite version */
-@import '~lxgw-wenkai-lite-webfont/style.css';
+@import 'lxgw-wenkai-lite-webfont/style.css';
 /* TC version */
-@import '~lxgw-wenkai-tc-webfont/style.css';
+@import 'lxgw-wenkai-tc-webfont/style.css';
 /* Screen version */
-@import '~lxgw-wenkai-screen-webfont/style.css';
+@import 'lxgw-wenkai-screen-webfont/style.css';
 body {
   font-family: "LXGW WenKai", sans-serif;
   /* Lite version */
@@ -91,8 +91,8 @@ You can also include specific weights if you don't want to use all the font
 weights or don't want to use mono font. For example:
 
 ```css
-@import '~lxgw-wenkai-webfont/lxgwwenkai-regular.css';
-@import '~lxgw-wenkai-webfont/lxgwwenkai-bold.css';
+@import 'lxgw-wenkai-webfont/lxgwwenkai-regular.css';
+@import 'lxgw-wenkai-webfont/lxgwwenkai-bold.css';
 body {
   font-family: "LXGW WenKai", sans-serif;
 }
