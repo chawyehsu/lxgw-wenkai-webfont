@@ -85,6 +85,18 @@ Put the jsDelivr `<link>` into your html head, then update the font-family.
 </html>
 ```
 
+The following are some `cdnjs` mirrors for mainland China, which have high service stability and low latency.
+  + `cdn.bootcdn.net`
+  + `www.staticfile.org`
+  + `cdn.baomitu.com`
+  + ...
+```html
+<!-- example of mirror cdn.bootcdn.net-->
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-webfont/1.6.0/style.min.css" />
+<link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.6.0/style.min.css" />
+```
+**Attention**: **ONLY** webfont `LXGW WenKai` and its screen version `LXGW WenKai Screen` are available at `cdnjs`, whose version is both the latest `1.6.0`. So are the mirrors.
+
 #### Use specific font weights
 
 You can also include specific weights if you don't want to use all the font
