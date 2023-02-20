@@ -1,3 +1,10 @@
+# lxgw-wenkai-webfont [1.7.0](https://github.com/chawyehsu/lxgw-wenkai-webfont/compare/lxgw-wenkai-webfont@1.6.0...lxgw-wenkai-webfont@1.7.0) (2023-02-20)
+
+
+### Features
+
+* **deps:** update font version ([#25](https://github.com/chawyehsu/lxgw-wenkai-webfont/issues/25)) ([af6aa83](https://github.com/chawyehsu/lxgw-wenkai-webfont/commit/af6aa83f671bfbbdeea84a5a2cb7fbc2fa803c7a))
+
 # lxgw-wenkai-webfont [1.6.0](https://github.com/chawyehsu/lxgw-wenkai-webfont/compare/lxgw-wenkai-webfont@1.5.0...lxgw-wenkai-webfont@1.6.0) (2022-04-30)
 
 
